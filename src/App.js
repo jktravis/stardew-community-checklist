@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootswatch/dist/sandstone/bootstrap.min.css";
+import "react-toastify/dist/ReactToastify.min.css";
+import React from "react";
+import { ToastContainer } from "react-toastify";
+import { ThemeProvider } from "@emotion/react";
+import CheckListContextProvider from "./context/CheckListContext";
+import Checklist from "./components/Checklist";
+import theme from "./style/theme";
+import Global from "./style/Global";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Global />
+      <CheckListContextProvider>
+        <Checklist />
+      </CheckListContextProvider>
+      <ToastContainer />
+    </ThemeProvider>
   );
 }
 
