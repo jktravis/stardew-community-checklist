@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/stardew-community-checklist/static/css/main.7532b4e3.css",
-    "main.js": "/stardew-community-checklist/static/js/main.0e7e803f.js",
+    "main.js": "/stardew-community-checklist/static/js/main.7433af73.js",
     "index.html": "/stardew-community-checklist/index.html",
     "main.7532b4e3.css.map": "/stardew-community-checklist/static/css/main.7532b4e3.css.map",
-    "main.0e7e803f.js.map": "/stardew-community-checklist/static/js/main.0e7e803f.js.map"
+    "main.7433af73.js.map": "/stardew-community-checklist/static/js/main.7433af73.js.map"
   },
   "entrypoints": [
     "static/css/main.7532b4e3.css",
-    "static/js/main.0e7e803f.js"
+    "static/js/main.7433af73.js"
   ]
 }
