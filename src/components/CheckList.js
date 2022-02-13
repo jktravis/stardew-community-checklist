@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Tab, Tabs } from "react-bootstrap";
+import { Tab, Tabs } from "react-bootstrap";
 import Season from "./Season";
 import Anytime from "./Anytime";
 import { useCheckList } from "../context/CheckListContext";
@@ -7,7 +7,7 @@ import * as R from "ramda";
 import Reset from "./Reset";
 import Footer from "./Footer";
 
-function Checklist() {
+function CheckList() {
   const context = useCheckList();
 
   const handleSelect = (key) => {
@@ -39,4 +39,4 @@ function Checklist() {
   );
 }
 
-export default Checklist;
+export default CheckList;

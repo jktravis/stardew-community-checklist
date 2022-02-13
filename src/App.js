@@ -4,7 +4,7 @@ import React from "react";
 import { ToastContainer } from "react-toastify";
 import { ThemeProvider } from "@emotion/react";
 import CheckListContextProvider from "./context/CheckListContext";
-import Checklist from "./components/Checklist";
+import CheckList from "./components/CheckList";
 import theme from "./style/theme";
 import Global from "./style/Global";
 
@@ -13,7 +13,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Global />
       <CheckListContextProvider>
-        <Checklist />
+        <CheckList />
       </CheckListContextProvider>
       <ToastContainer />
     </ThemeProvider>
