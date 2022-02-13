@@ -16,11 +16,19 @@ const globalStyles = css`
     margin-left: 0.5rem;
   }
 
+  h1 {
+    text-align: center;
+  }
+
   a {
     color: ${theme.colors.textColor};
   }
   .season {
     padding: 0.125rem;
+  }
+
+  #root {
+    background-color: rgba(255, 255, 255, 0.6);
   }
 `;
 

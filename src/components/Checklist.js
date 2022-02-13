@@ -14,7 +14,7 @@ function Checklist() {
 
   return (
     <div className="checklist">
-      <Tabs defaultActiveKey="Spring" transition activeKey={context.data.currentTab} onSelect={handleSelect}>
+      <Tabs defaultActiveKey="Spring" transition activeKey={context.data.currentTab} onSelect={handleSelect} fill>
         <Tab title="Spring" eventKey="spring">
           <Season season="spring" />
         </Tab>
