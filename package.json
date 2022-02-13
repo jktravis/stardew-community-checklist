@@ -2,6 +2,7 @@
   "name": "stardew-community-checklist",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jktravis.github.io/stardew-community-checklist",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -9,6 +10,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "bootswatch": "^5.1.3",
+    "gh-pages": "^3.2.3",
     "lodash.startcase": "^4.4.0",
     "ramda": "^0.28.0",
     "react": "^17.0.2",
@@ -23,6 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint-staged": "lint-staged",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -30,7 +34,9 @@
       "react-app",
       "react-app/jest"
     ],
-    "plugins": ["prettier"],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": "off"
     }
