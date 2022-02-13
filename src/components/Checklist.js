@@ -1,9 +1,11 @@
 import React from "react";
-import { Tab, Tabs } from "react-bootstrap";
+import { Button, Tab, Tabs } from "react-bootstrap";
 import Season from "./Season";
 import Anytime from "./Anytime";
 import { useCheckList } from "../context/CheckListContext";
 import * as R from "ramda";
+import Reset from "./Reset";
+import Footer from "./Footer";
 
 function Checklist() {
   const context = useCheckList();
@@ -31,6 +33,8 @@ function Checklist() {
           <Anytime />
         </Tab>
       </Tabs>
+      <Reset />
+      <Footer />
     </div>
   );
 }
