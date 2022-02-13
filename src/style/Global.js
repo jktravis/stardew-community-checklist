@@ -1,10 +1,12 @@
 import theme from "./theme";
 import { css, Global as EmotionGlobal } from "@emotion/react";
 
+const url = `${process.env.PUBLIC_URL}/background3.jpg`;
+
 const globalStyles = css`
   body {
     color: ${theme.colors.textColor};
-    background: url("background3.jpg") no-repeat center center fixed;
+    background: url(${url}) no-repeat center center fixed;
     background-size: cover;
   }
 

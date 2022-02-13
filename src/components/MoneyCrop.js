@@ -21,7 +21,7 @@ function MoneyCrop({ data }) {
           const { wikiLink, image, label } = datum;
           return (
             <a href={wikiLink} key={`${label}-${idx}`} target="_blank" rel="noopener noreferrer">
-              <img src={image} alt={label} />
+              <img src={`${process.env.PUBLIC_URL}/${image}`} alt={label} />
             </a>
           );
         })}

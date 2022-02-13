@@ -56,10 +56,10 @@ function Item({ data }) {
           <Form.Check.Input type="checkbox" checked={completed} onChange={handleChange} />
           {quality ? (
             <Quality>
-              <img src={image} alt={label} />
+              <img src={`${process.env.PUBLIC_URL}/${image}`} alt={label} />
             </Quality>
           ) : (
-            <img src={image} alt={label} />
+            <img src={`${process.env.PUBLIC_URL}/${image}`} alt={label} />
           )}
           <a href={wikiLink} target="_blank" rel="noopener noreferrer" className="label">
             {label}

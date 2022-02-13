@@ -13,7 +13,7 @@ const QualityStyle = styled("div")`
 function Quality({ children }) {
   return (
     <QualityStyle>
-      <img src="Gold_Quality_Icon.png" alt="Gold Quality" className="quality-icon" />
+      <img src={`${process.env.PUBLIC_URL}/Gold_Quality_Icon.png`} alt="Gold Quality" className="quality-icon" />
       {children}
     </QualityStyle>
   );
